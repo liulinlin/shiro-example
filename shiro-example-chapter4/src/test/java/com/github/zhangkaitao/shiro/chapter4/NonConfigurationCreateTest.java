@@ -39,13 +39,13 @@ public class NonConfigurationCreateTest {
         authorizer.setPermissionResolver(new WildcardPermissionResolver());
         securityManager.setAuthorizer(authorizer);
 
-        //设置Realm
+        // 连接数据库
         DruidDataSource ds = new DruidDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
         ds.setUrl("jdbc:mysql://localhost:3306/shiro");
         ds.setUsername("root");
         ds.setPassword("");
-
+        //设置Realm
         JdbcRealm jdbcRealm = new JdbcRealm();
         jdbcRealm.setDataSource(ds);
         jdbcRealm.setPermissionsLookupEnabled(true);
