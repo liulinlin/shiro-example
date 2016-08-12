@@ -1,5 +1,6 @@
-package com.github.zhangkaitao.shiro.chapter16.dao;
+package com.github.zhangkaitao.shiro.chapter16.dao.imp;
 
+import com.github.zhangkaitao.shiro.chapter16.dao.OrganizationDao;
 import com.github.zhangkaitao.shiro.chapter16.entity.Organization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
